@@ -1,14 +1,28 @@
 module.exports = function (grunt) {
     grunt.initConfig({
         jshint: {
-            all:['src/**/*.js'],
+            all:['src/**/*.js','test/**/*.js'],
             options:{
                 globals: {
                     _: false,
-                    $: false
+                    $: false,
+                    jasmine: false,
+                    describe:false,
+                    it:false,
+                    expect: false,
+                    beforeEach: false,
+                    afterEach: false,
+                    sinon: false
                 },
                 browser: true,
-                dvel: true
+                devel: true
+            }
+        },
+        testem: {
+            unit: {
+                options:{
+                    
+                }
             }
         }
     });
