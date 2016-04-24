@@ -13,8 +13,14 @@
   "license": "ISC",
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-contrib-coffee": "^1.0.0",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-testem": "^0.5.22",
+    "phantomjs": "^2.1.7",
+    "phantomjs-prebuilt": "^2.1.7",
     "sinon": "^1.17.3"
+  },
+  "dependencies": {
+    "ms": "^0.7.1"
   }
 }
